@@ -8,8 +8,7 @@ type Props = {
 const ProtectedRoute = ({ allowedRoles }: Props) => {
   const location = useLocation();
   // const { user } = useAppSelector((state: RootState) => state.user);
-  const user = { roles: [] }
-  console.log("🚀 ~ file: ProtectedRoute.tsx:12 ~ ProtectedRoute ~ user:", user)
+  const user = { roles: [] };
   return user?.roles?.find((role) => allowedRoles?.includes(role)) ? (
     <Outlet />
   ) : user ? (

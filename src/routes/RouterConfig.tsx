@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import LayoutRoute from "./LayoutRoute";
 import Home from "@/pages/home/Home";
